@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/image/Logo.png" alt="Logo">
+      </div>
+      <div class="contact">
+        <div class="contact-me">
+          <i class='bx bxl-instagram-alt' style='color:#dc5f5f'  ></i>
+          <span>Follow Me</span>
+        </div>
+        <div class="contact-me">
+          <i class='bx bxs-phone' style='color:#ffffff' id="contact-icon" ></i>
+          <span>Contact Me</span>
+        </div>
+        <div class="contact-me">
+          <span class="CV">CV</span>
+        </div>
+      </div>
+    </header>
+
+
+
+    <!-- Sliding contact form div -->
+  <div class="contact-form-container" id="contact-form-container">
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <section class="intro">
+      <p>Hello, it's me Ebuka Joel.<br> I'm a </p>
+      <div class="intro-bar">
+        <span id="auto-type"></span>
+      </div>
+      
+    </section>
+  
+
+    <section class="about-me">
+      <div class="text-content">
+        <h1>About Me</h1>
+        <p>Hello, I'm Ebuka Joel. I’m a UI/UX Designer, Graphics Designer, and Front-End Developer. I create visually engaging and user-friendly interfaces that enhance the user experience. My work spans across designing intuitive user interfaces, crafting stunning graphics, and developing responsive web pages. I am passionate about blending creativity with technology to deliver solutions that not only look great but also function seamlessly. Whether it’s through thoughtful design or clean code, I strive to make digital experiences both beautiful and efficient.</p>
+      </div>
+      <div class="image-content">
+        <img src="/image/ebuka3.png" alt="Ebuka Joel" class="profile-image">
+      </div>
+    </section>
+
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-images">
+        <div class="project-image-container">
+          <img class="project-image" src="/image/GD/Burger102.png" alt="Project 1">
+        </div>
+        <div class="project-image-container">
+          <img class="project-image" src="/image/GD/Burger102.png" alt="Project 1">
+        </div>
+        <div class="project-image-container">
+          <img class="project-image" src="/image/GD/Burger102.png" alt="Project 1">
+        </div>
+        <div class="project-image-container">
+          <img class="project-image" src="/image/GD/Burger102.png" alt="Project 1">
+        </div>
+        <div class="project-image-container">
+          <img class="project-image" src="/image/GD/Burger102.png" alt="Project 1">
+        </div>
+        <div class="project-image-container">
+          <img class="project-image" src="/image/GD/Burger102.png" alt="Project 1">
+        </div>
+        <!-- Add more images as needed -->
+      </div>
+    </section>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-code">
+        <a href=""><i class='bx bxl-codepen bxi bx-tada bx-rotate-90' style='color:#dc5f5f' ></i></a>
+        <a href=""><i class='bx bxl-codepen bxi bx-tada bx-rotate-90' style='color:#dc5f5f' ></i></a>
+        <a href=""><i class='bx bxl-codepen bxi bx-tada bx-rotate-90' style='color:#dc5f5f' ></i></a>
+        <!-- Add more images as needed -->
+         <!--add pictures-->
+      </div>
+    </section>
+
+
+
+
+
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/firebaseConfig.js"></script>
+  </body>
+</html>
