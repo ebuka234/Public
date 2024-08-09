@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0C122C;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px;
+        }
+
+        .hero2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 2rem;
+            background-color: #1E2C6A;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        .hero3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            padding: 20px;
+            border-top-right-radius: 100px;
+            background-color: #1E2C6A;
+            width: 100%;
+            max-width: 340px;
+        }
+
+        .hero4 {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .hero4 div {
+            background-color: #0C122C;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        .storage {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background-color: #1E2C6A;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .lod {
+            font-size: 14px;
+        }
+
+        .load {
+            background-color: rgba(0, 0, 0, 0.4);
+            height: 15px;
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .load2 {
+            background-image: linear-gradient(227deg, #940f5b 0%, #7730be 53%, #1b274a 100%);
+            height: 100%;
+            width: 81.5%; /* 81.5% represents 815GB out of 1000GB */
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .load3 {
+            background-color: white;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .load4 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: white;
+        }
+
+        .small {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #0C122C;
+            position: absolute;
+            bottom: -30px;
+            right: 20px;
+        }
+
+        .small span {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero2 {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .hero3 {
+                align-items: center;
+                max-width: 100%;
+            }
+
+            .storage {
+                max-width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+
+            .small {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero2">
+            <div class="hero3">
+                <img id="logo" src="images/logo.svg" alt="Logo">
+                <div class="hero4">
+                    <div><img src="images/icon-document.svg" alt="Document"></div>
+                    <div><img src="images/icon-folder.svg" alt="Folder" style="height: 25px;"></div>
+                    <div><img src="images/icon-upload.svg" alt="Upload" style="height: 25px;"></div>
+                </div>
+            </div>
+            <div class="storage">
+                <div class="lod">You've used 815 GB of your storage</div>
+                <div class="load">
+                    <div class="load2">
+                        <div class="load3"></div>
+                    </div>
+                </div>
+                <div class="load4">
+                    <p>0 GB</p><p>1000 GB</p>
+                </div>
+            </div>
+            <div class="small">
+                <span>185</span> GB LEFT
+            </div>
+        </div>
+    </section>
+</body>
+</html>
