@@ -1,21 +1,29 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+
 }
 
 
 /* header*/
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: #f8f9fa;
   border-bottom: 1px solid #e7e7e7;
+  padding-left: 80px;
+  padding-right: 80px;
+  position:sticky;
+  top: 0;
+  z-index: 1000;
+ 
 }
 
 .logo img {
-  height: 50px; /* Adjust the height as needed */
+  height: 100px; /* Adjust the height as needed */
   border-radius: 50%;
 }
 
@@ -43,24 +51,49 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.09);
   margin-right: 8px; /* Space between icon and text */
 }
-
-.contact-me .bxs-phone {
-  background-color: #706f6f;
+.bxl-linkedin-square{
+  background-color: #ffffff;
   align-items: center;
   padding: 5px;
   border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.09);
   margin-right: 8px; /* Space between icon and text */
 }
-
-.contact-me .CV{
-  background-color: #706f6f;
+.bxs-contact{
+  background-color: #ffffff;
   align-items: center;
   padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.09);
+  margin-right: 8px; /* Space between icon and text */
+  cursor: pointer;
+}
+.bxl-sketch{
+  background-color: #ffffff;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.09);
+  margin-right: 8px; /* Space between icon and text */
+}
+a{
+  text-decoration: none;
 }
 
 
+.contact-me2{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.00); 
+  /* background-color: #ffffff; */
+  align-items: center;
+  padding: 4px;
+}
 
-/*contact div*/
+
+/*slide contact div*/
 .contact-form-container {
   position: fixed;
   top: 0;
@@ -174,7 +207,7 @@ header {
 
 
 
-/* third section */
+/* About section */
 .about-me {
   display: flex;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
@@ -227,7 +260,7 @@ header {
 
 
 
-/*4th section*/
+/*projects section*/
 .projects {
   padding: 20px;
   text-align: center;
@@ -296,8 +329,243 @@ header {
 
 
 
-/*5th section*/
+/*project-code section*/
 .bxl-codepen {
-  font-size: 90px;
-  margin: 20px;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.project-code{
+  height: auto;
+  display: flex;
+  width: auto;
+  margin: 60px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  position: relative;
+  background-color: antiquewhite;
+}
+.wow{
+  width: 70%;
+  padding-left: 70px;
+}
+
+.block{
+  width: 50%;
+  border: 2px red solid;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.code{
+  height: auto;
+  width: 40%;
+  padding-left: 70px;
+  position: relative;
+  bottom: 40px;
+}
+.codeimg{
+  height: auto;
+  width: 40%;
+}
+
+.code h1{
+  font-size: 70px;
+  font-family: poppins, sans-serif;
+  color: #363636;
+}
+
+
+
+
+
+
+/*footer*/
+.simple-footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 7px 0;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.simple-footer p {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column; /* Stack header elements vertically */
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .contact {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .intro p {
+    font-size: 35px;
+  }
+
+  .intro-bar {
+    width: 90%; /* Adjusted width for smaller screens */
+    height: 40px;
+  }
+
+  .about-me {
+    display: flex; /* Stack the content vertically */
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .text-content {
+    padding-left: 40px;
+    padding-top: 0px;
+  }
+  .text-content p{
+    font-size: 5px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+  }
+  .text-content h1{
+    margin: 0%;
+  }
+  .image-content {
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .profile-image {
+    max-width: 100%;
+    padding-right: 95px;
+    top: 0;
+  }
+
+  .projects {
+    margin: 10px;
+  }
+
+  .project-image-container {
+    width: 100%; /* Full width for smaller screens */
+    height: auto;
+  }
+  .project-image {
+    width: 90%;
+    height: auto;
+  }
+
+  .project-code{
+    height: auto;
+    display: flex;
+    width: auto;
+    margin: 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    position: relative;
+    background-color: antiquewhite;
+  }
+  .bxl-codepen {
+    font-size: 20px;
+    margin: 2px;
+  }
+
+  .code {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    position: relative;
+    top: -10px;
+  }
+  .code h1{
+    font-size: 25px;
+  }
+
+  .codeimg {
+    width: 100%;
+    
+  }
+  .wow{
+    width: 100px;
+    padding-left: 10%;
+  }
+  .block{
+    width: 70%;
+    border: 2px red solid;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -10px;
+    gap: 0.5rem;
+  }
+
+
+}
+
+
+@media (max-width: 480px) {
+  .contact-me {
+    font-size: 14px; /* Slightly smaller font for very small screens */
+  }
+
+  .projects h2 {
+    font-size: 30px;
+  }
+
+  .simple-footer {
+    font-size: 8px;
+    padding: 5px 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .project-image-container {
+    width: 48%; /* Maintain two images per row on medium screens */
+    margin: 1%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .project-image-container {
+    width: 50%; /* Single image per row on smaller screens */
+    margin: 0 0 10px 0; /* Add margin for spacing */
+  }
 }

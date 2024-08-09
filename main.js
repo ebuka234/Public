@@ -66,21 +66,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-//toggle sliding form
+/// Toggle sliding form
 document.addEventListener('DOMContentLoaded', () => {
-    const contactIcon = document.querySelector('.bxs-phone');
-    const contactFormContainer = document.getElementById('contact-form-container');
-  
-    contactIcon.addEventListener('click', () => {
-      contactFormContainer.classList.toggle('show');
-    });
+  const contactIcon = document.querySelector('.bxs-contact');
+  const contactFormContainer = document.getElementById('contact-form-container');
 
-    // Close the form if clicking outside of it
+  contactIcon.addEventListener('click', () => {
+    contactFormContainer.classList.toggle('show');
+  });
+
+  // Close the form if clicking outside of it
   document.addEventListener('click', (event) => {
     if (!contactFormContainer.contains(event.target) && !contactIcon.contains(event.target)) {
       contactFormContainer.classList.remove('show');
     }
   });
-  });
+});
+
   
   
