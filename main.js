@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Close the form if clicking outside of it
   document.addEventListener('click', (event) => {
     if (!contactFormContainer.contains(event.target) && !contactIcon.contains(event.target)) {
-      contactFormContainer.classList.remove('show');
+      contactFormContainer.classList.remove('show') ;
     }
   });
 });

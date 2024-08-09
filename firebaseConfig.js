@@ -9,7 +9,7 @@ const db = getFirestore(app);
 
 
 
-export { db };
+export { db } ;
 
 // Handle form submission
 document.addEventListener('DOMContentLoaded', () => {
