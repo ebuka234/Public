@@ -21,7 +21,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="./image/Logo.png" alt="Logo">
+        <a href="#"><img src="./image/Logo.png" alt="Logo"></a>
       </div>
       <div class="contact">
         <div class="contact-me">
@@ -88,7 +88,7 @@
         <p>Hello, I'm Ebuka Joel. I’m a UI/UX Designer, Graphics Designer, and Front-End Developer. I create visually engaging and user-friendly interfaces that enhance the user experience. My work spans across designing intuitive user interfaces, crafting stunning graphics, and developing responsive web pages. I am passionate about blending creativity with technology to deliver solutions that not only look great but also function seamlessly. Whether it’s through thoughtful design or clean code, I strive to make digital experiences both beautiful and efficient.</p>
       </div>
       <div class="image-content">
-        <img src="./image/ebuka3.png" alt="Ebuka Joel" class="profile-image">
+        <img src="./image/ebuka3.webp" alt="Ebuka Joel" class="profile-image">
       </div>
     </section>
 
@@ -97,47 +97,48 @@
       <h2>Project Designs</h2>
       <div class="project-images">
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/Burger102.png" alt="Project 1">
+          <a href="./image/GD/Burger102.webp"><img class="project-image" src="./image/GD/Burger102.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/chicken.png" alt="Project 1">
+          <a href="./image/GD/chicken.webp"><img class="project-image" src="./image/GD/chicken.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/dinnernight2.png" alt="Project 1">
+          <a href="./image/GD/dinnernight2.webp"><img class="project-image" src="./image/GD/dinnernight2.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/final food1-01.png" alt="Project 1">
+          <a href="./image/GD/final food1-01.webp"><img class="project-image" src="./image/GD/final food1-01.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/grape1.png" alt="Project 1">
+          <a href="./image/GD/grape1.webp"><img class="project-image" src="./image/GD/grape1.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/hilda2.png" alt="Project 1">
+          <a href="./image/GD/hilda2.webp"><img class="project-image" src="./image/GD/hilda2.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/nike4.png" alt="Project 1">
+          <a href="./image/GD/nike4.webp"><img class="project-image" src="./image/GD/nike4.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/Untitled-4.png" alt="Project 1">
+          <a href="./image/GD/Untitled-4.webp"><img class="project-image" src="./image/GD/Untitled-4.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/fyb2monday.png" alt="Project 1">
+          <a href="./image/GD/fyb2monday.webp"><img class="project-image" src="./image/GD/fyb2monday.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/fybdesign.png" alt="Project 1">
+          <a href="./image/GD/fybdesign.webp"><img class="project-image" src="./image/GD/fybdesign.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/Frame 2Ebuka.png" alt="Project 1">
+          <a href="./image/GD/Frame 2Ebuka.webp"><img class="project-image" src="./image/GD/Frame 2Ebuka.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/fybfri3.png" alt="Project 1">
+          <a href="./image/GD/fybfri3.webp"><img class="project-image" src="./image/GD/fybfri3.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/Desktop - 1text.png" alt="Project 1">
+          <a href="./image/GD/Desktop - 1text.webp"><img class="project-image" src="./image/GD/Desktop - 1text.png" alt="Project 1"></a>
         </div>
         <div class="project-image-container">
-          <img class="project-image" src="./image/GD/Desktop - 1text5.png" alt="Project 1">
+          <a href="./image/GD/Desktop - 1text5.webp"><img class="project-image" src="./image/GD/Desktop - 1text5.png" alt="Project 1"></a>
         </div>
+        
         <!-- <div class="project-image-container">
           <img class="project-image" src="./image/GD/Burger102.png" alt="Project 1">
         </div> -->
@@ -211,27 +212,37 @@
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
     
-            try {
-              // Add document to Firestore
-              await addDoc(collection(db, 'messages'), {
-                name: name,
-                phone: phone,
-                email: email,
-                message: message,
-                timestamp: new Date() // Add a timestamp
-              });
-    
-              alert('Message sent successfully!');
-              document.querySelector('.contact-form').reset(); // Clear the form
-            } catch (error) {
-              console.error('Error adding document: ', error);
-              alert('Error sending message, please try again.');
-            }
-          });
-        } else {
-          console.error('Submit button not found');
-        }
+           // Basic validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple regex for email validation
+
+if (name && phone && email && message) {
+  if (emailRegex.test(email)) { // Validate email format
+    try {
+      // Add document to Firestore
+      await addDoc(collection(db, 'messages'), {
+        name: name,
+        phone: phone,
+        email: email,
+        message: message,
+        timestamp: new Date() // Add a timestamp
       });
+
+      alert('Message sent successfully!');
+      document.querySelector('.contact-form').reset(); // Clear the form
+    } catch (error) {
+      console.error('Error adding document: ', error);
+    }
+  } else {
+    alert('Please enter a valid email address.');
+  }
+} else {
+  alert('Please fill in all fields.');
+}
+});
+} else {
+console.error('Submit button not found.');
+}
+});
     </script>
     
   </body>
